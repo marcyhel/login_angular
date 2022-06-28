@@ -1,0 +1,15 @@
+<div class="h-screen w-screen flex justify-center items-center bg-blue-400"  >
+    <div class='bg-white rounded-lg py-10 w-52 flex flex-col justify-center items-center'>
+        <p>Bem Vindos</p>
+        <app-fild-custon (value)="total_lista =+ $event" [placeholder]="'Ex: 5'" class='py-2'></app-fild-custon>
+        <app-button-custon [nome]="'Criar'" (click)="gera_array()"></app-button-custon>
+        <div class="h-28 w-52 overflow-x-scroll flex flex-col">
+            <div *ngFor="let a of lista_iterada" >
+                
+                <div>{{a}}</div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

@@ -1,0 +1,13 @@
+<div class="login-screen h-screen w-screen flex justify-center items-center bg-gray-200 ">
+    
+    <div class="bg-white border-gray3 rounded-lg h-[460px] w-[560px] flex flex-col justify-evenly items-center">
+        <p>Tela de Login</p>
+       <app-fild-custon (value)="credenciais.login = $event" [nameLabel]="'Login'"  [placeholder]="'Ex: e-mail@gmail.com'"></app-fild-custon>
+       <app-fild-custon (value)="credenciais.senha = $event" [nameLabel]="'Senha'"></app-fild-custon>
+       <app-button-custon (click)="logar()" [nome]="'Login'"></app-button-custon>
+       <span class="text-red-500 "><Strong>{{falha_login}}</Strong></span>
+    </div>
+   
+    
+</div> 
+
